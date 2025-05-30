@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz de TI</title>
+  <link rel="stylesheet" href="jquiz.css">
+</head>
+<body>
+  <h1>Quiz de Tecnologia da Informação</h1>
+  <form id="quizForm">
+    <!-- Pergunta 1 -->
+    <div class="pergunta">
+      <p>1. Qual linguagem é mais usada para desenvolvimento front-end?</p>
+      <label><input type="radio" name="q1" value="correta"> JavaScript</label><br>
+      <label><input type="radio" name="q1" value="errada"> Python</label><br>
+      <label><input type="radio" name="q1" value="errada"> C++</label><br>
+      <label><input type="radio" name="q1" value="errada"> Java</label><br>
+      <label><input type="radio" name="q1" value="errada"> PHP</label>
+    </div>
+
+    <!-- Pergunta 2 -->
+    <div class="pergunta">
+      <p>2. Qual protocolo é utilizado para transferir páginas web?</p>
+      <label><input type="radio" name="q2" value="correta"> HTTP</label><br>
+      <label><input type="radio" name="q2" value="errada"> FTP</label><br>
+      <label><input type="radio" name="q2" value="errada"> SMTP</label><br>
+      <label><input type="radio" name="q2" value="errada"> SSH</label><br>
+      <label><input type="radio" name="q2" value="errada"> DNS</label>
+    </div>
+
+    <!-- Pergunta 3 -->
+    <div class="pergunta">
+      <p>3. O que significa "HTML"?</p>
+      <label><input type="radio" name="q3" value="correta"> HyperText Markup Language</label><br>
+      <label><input type="radio" name="q3" value="errada"> HighText Machine Language</label><br>
+      <label><input type="radio" name="q3" value="errada"> Hyper Tool Multi Language</label><br>
+      <label><input type="radio" name="q3" value="errada"> Hyperlink and Text Mark Language</label><br>
+      <label><input type="radio" name="q3" value="errada"> None of the above</label>
+    </div>
+
+    <!-- Pergunta 4 -->
+    <div class="pergunta">
+      <p>4. Qual é o comando para clonar um repositório no Git?</p>
+      
+      <label><input type="radio" name="q4" value="errada"> git init</label><br>
+      <label><input type="radio" name="q4" value="errada"> git push</label><br>
+      <label><input type="radio" name="q4" value="errada"> git merge</label><br>
+      <label><input type="radio" name="q4" value="correta"> git clone</label><br>
+      <label><input type="radio" name="q4" value="errada"> git commit</label>
+    </div>
+
+    <!-- Pergunta 5 -->
+    <div class="pergunta">
+      <p>5. Qual banco de dados é relacional?</p>
+      
+      <label><input type="radio" name="q5" value="errada"> MongoDB</label><br>
+      <label><input type="radio" name="q5" value="errada"> Redis</label><br>
+      <label><input type="radio" name="q5" value="correta"> MySQL</label><br>
+      <label><input type="radio" name="q5" value="errada"> Cassandra</label><br>
+      <label><input type="radio" name="q5" value="errada"> Neo4j</label>
+    </div>
+
+    <button type="button" onclick="verificarQuiz()">Ver Resultado</button>
+  </form>
+
+  <p class="resultado" id="resultado"></p>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
